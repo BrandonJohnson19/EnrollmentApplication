@@ -10,7 +10,7 @@ namespace WebApplication2.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Other/Details.cshtml");
         }
 
         public ActionResult About()
@@ -24,6 +24,11 @@ namespace WebApplication2.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Edit()
+        {
             return View();
         }
     }
