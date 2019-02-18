@@ -46,7 +46,7 @@ namespace EnrollmentApplication.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EnrollmentId,Grade")] Enrollment enrollment)
+        public ActionResult Create([Bind(Include = "EnrollmentId, Grade")] Enrollment enrollment)
         {
             if (ModelState.IsValid)
             {
@@ -123,5 +123,6 @@ namespace EnrollmentApplication.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

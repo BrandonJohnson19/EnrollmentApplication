@@ -10,12 +10,67 @@
     <h4>Enrollment</h4>
     <hr />
     <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrollmentId)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentId)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseId)
+        </dt>
         <dt>
             @Html.DisplayNameFor(model => model.Grade)
         </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentObject)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseObject)
+        </dt>
+        <dt>
+            @Html.TextBoxFor(model => model.AssignedCampus)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.EnrollmentSemester)
+        </dt>
+        <dt>
+            @Html.TextBoxFor(model => model.EnrollmentYear)
+        </dt>
+        <dt>
+            @Html.CheckBoxFor(model => model.IsActive)
+        </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Grade)
+        @Html.DisplayFor(model => model.EnrollmentId)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.StudentId)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.CourseId)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.Grade)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.StudentObject)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.CourseObject)
+        </dd>
+        <dd>
+        @Html.TextBoxFor(model => model.AssignedCampus)
+        </dd>
+        <dd>
+        @Html.DisplayFor(model => model.EnrollmentSemester)
+        </dd>
+        <dd>
+        @Html.TextBoxFor(model => model.EnrollmentYear)
+        </dd>
+        <dd>
+            @Html.CheckBoxFor(model => model.IsActive)
         </dd>
 
     </dl>
