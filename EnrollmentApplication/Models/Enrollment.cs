@@ -31,5 +31,6 @@ namespace EnrollmentApplication.Models
         [RegularExpression("2018-2019", ErrorMessage ="Please enter in 2018 or 2019")]
         public virtual int EnrollmentYear { get; set; }
         public virtual bool IsActive { get; set; }
+        public virtual string Notes { get; set; }
     }
 }

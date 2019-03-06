@@ -20,5 +20,15 @@ namespace EnrollmentApplication.Models
         [StringLength(50)]
         [Display(Name ="First Name")]
         public virtual String FirstName { get; set; }
+
+        [MinimumAge(20)]
+        public virtual int Age { get; set; }
+
+        public string Address1 { get; set; }
+        public string Address2 { get; set; }
+        public string City { get; set; }
+        public string Zipcode { get; set; }
+        public string State { get; set; }
+
     }
 }

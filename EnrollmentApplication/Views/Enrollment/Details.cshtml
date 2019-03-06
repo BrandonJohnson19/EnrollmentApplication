@@ -41,36 +41,42 @@
         <dt>
             @Html.CheckBoxFor(model => model.IsActive)
         </dt>
+        <dt>
+            @Html.TextBoxFor(model => model.Notes)
+        </dt>
 
         <dd>
-        @Html.DisplayFor(model => model.EnrollmentId)
+            @Html.DisplayFor(model => model.EnrollmentId)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.StudentId)
+            @Html.DisplayFor(model => model.StudentId)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.CourseId)
+            @Html.DisplayFor(model => model.CourseId)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.Grade)
+            @Html.DisplayFor(model => model.Grade)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.StudentObject)
+            @Html.DisplayFor(model => model.StudentObject)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.CourseObject)
+            @Html.DisplayFor(model => model.CourseObject)
         </dd>
         <dd>
-        @Html.TextBoxFor(model => model.AssignedCampus)
+            @Html.TextBoxFor(model => model.AssignedCampus)
         </dd>
         <dd>
-        @Html.DisplayFor(model => model.EnrollmentSemester)
+            @Html.DisplayFor(model => model.EnrollmentSemester)
         </dd>
         <dd>
-        @Html.TextBoxFor(model => model.EnrollmentYear)
+            @Html.TextBoxFor(model => model.EnrollmentYear)
         </dd>
         <dd>
             @Html.CheckBoxFor(model => model.IsActive)
+        </dd>
+        <dd>
+            @Html.TextBoxFor(model => model.Notes)
         </dd>
 
     </dl>
